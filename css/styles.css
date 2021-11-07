@@ -1,24 +1,23 @@
 :root {
-  --main-header-color: #212121;
+  --header-text-color: #212121;
   --accent-color: #2196f3;
   --main-title-color: #212121;
-  --main-text-color: #757575;
-  --main-btr-color: #ffffff;
+  --portfolio-text-color: #212121;
 }
 
 body {
   font-family: "Roboto", sans-serif;
 }
 
-.list {
-  list-style: none;
-}
-
 .link {
   text-decoration: none;
 }
 
-/* -----------------------Верхняя линия-------------- */
+.list {
+  list-style: none;
+}
+
+/* ------------------------------ШАПКА---------------------------------- */
 
 .header {
   background-color: #ffffff;
@@ -45,35 +44,21 @@ body {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  color: var(--main-header-color);
+  color: var(--header-text-color);
 }
 
 .header-link:hover {
   color: var(--accent-color);
 }
+
 .header-link:focus {
-  color: var(--accent-color);
-}
-
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.header-tel:hover {
-  color: var(--accent-color);
-}
-.header-tel:focus {
   color: var(--accent-color);
 }
 
 .header-mail {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -81,40 +66,33 @@ body {
 .header-mail:hover {
   color: var(--accent-color);
 }
+
 .header-mail:focus {
   color: var(--accent-color);
 }
 
-/* --------------------------HERO---------------------------------- */
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-tel:hover {
+  color: var(--accent-color);
+}
+
+.header-tel:focus {
+  color: var(--accent-color);
+}
+/* ------------------------------ГЕРОЙ-------------------------------------- */
 
 .hero {
-  background-color: #2f303a;
+  background: #2f303a;
 }
 
-.hero-btn {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-}
-
-.hero-btn {
-  background-color: #2196f3;
-}
-
-.hero-btn:hover {
-  color: #188ce8;
-}
-.hero-btn:focus {
-  color: #188ce8;
-}
-
-.hero-title {
+.hero-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -124,6 +102,32 @@ body {
   color: #ffffff;
 }
 
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-btn {
+  background: #2196f3;
+}
+
+.hero-btn:focus {
+  color: #188ce8;
+}
+
+.hero-btn:hover {
+  color: #188ce8;
+}
+
+/* -----------------------------ОСОБЕННОСТИ--------------------------------------- */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -131,29 +135,106 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.list-btn {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
+.content {
+  background-color: #e5e5e5;
 }
 
-/* --------------------Подвал------------------------- */
+.list-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.list-pre-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* -------------------------------ЧЕМ-МИ-ЗАНИМАЕМСЯ----------------------------------- */
+
+.item {
+  background-color: #f5f4fa;
+}
+
+.item-text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+}
+
+/* ---------------------------------НАША-КОМАННДА---------------------------------- */
+
+.items {
+  background-color: #f5f4fa;
+}
+
+.items-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+}
+
+.items-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* --------------------СТОРІНКА-2-ПОРТФОЛИО----------------------------------------- */
+
+.list-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+
+.section-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--portfolio-text-color);
+}
+
+.section-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ----------------------------ФУТЕР--------------------------------------------- */
 .footer {
   background-color: #2f303a;
 }
 
-.footer-web-link {
+.footer-logo-web {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -169,7 +250,15 @@ body {
   color: #ffffff;
 }
 
-.map-link {
+.footer-list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -177,44 +266,18 @@ body {
   color: #ffffff;
 }
 
-.map-link:hover {
-  color: var(--accent-color);
-}
-.map-link:focus {
+.footer-list:hover {
   color: var(--accent-color);
 }
 
-.footer-mail {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-mail:hover {
-  color: var(--accent-color);
-}
-.footer-mail:focus {
+.footer-list:focus {
   color: var(--accent-color);
 }
 
-.footer-tel {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-tel:hover {
+.footer-map:hover {
   color: var(--accent-color);
 }
 
-.footer-tel:focus {
+.footer-map:focus {
   color: var(--accent-color);
-}
-
-.map-link {
-  text-decoration: none;
 }
