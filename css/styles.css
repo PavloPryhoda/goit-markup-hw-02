@@ -24,6 +24,7 @@ body {
 }
 
 .header-logo-web {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -32,6 +33,7 @@ body {
 }
 
 .header-logo-studio {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -141,10 +143,6 @@ body {
   overflow: hidden;
 }
 
-.content {
-  background-color: #e5e5e5;
-}
-
 .list-text {
   font-weight: bold;
   font-size: 14px;
@@ -162,10 +160,6 @@ body {
   color: #757575;
 }
 /* -------------------------------ЧЕМ-МИ-ЗАНИМАЕМСЯ----------------------------------- */
-
-.item {
-  background-color: #f5f4fa;
-}
 
 .item-text {
   font-weight: bold;
@@ -202,7 +196,7 @@ body {
 /* --------------------СТОРІНКА-2-ПОРТФОЛИО----------------------------------------- */
 
 .list-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -235,6 +229,7 @@ body {
 }
 
 .footer-logo-web {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -243,6 +238,7 @@ body {
 }
 
 .footer-logo-studio {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -259,11 +255,18 @@ body {
 }
 
 .footer-map {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+address {
+  font-family: Roboto;
+  font-style: normal;
 }
 
 .footer-list:hover {
