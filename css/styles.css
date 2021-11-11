@@ -49,12 +49,13 @@ body {
   color: var(--header-text-color);
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
 
-.header-link:focus {
-  color: var(--accent-color);
+.header-link:active {
+  color: red;
 }
 
 .header-mail {
@@ -65,10 +66,7 @@ body {
   color: #757575;
 }
 
-.header-mail:hover {
-  color: var(--accent-color);
-}
-
+.header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
 }
@@ -81,13 +79,11 @@ body {
   color: #757575;
 }
 
-.header-tel:hover {
-  color: var(--accent-color);
-}
-
+.header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
 }
+
 /* ------------------------------ГЕРОЙ-------------------------------------- */
 
 .hero {
